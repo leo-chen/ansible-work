@@ -31,16 +31,12 @@
 
 - name: index.html on app 1
   hosts: app1
-  gather_facts: true
-  become: true
   template:
     src: index.html.app1
     dest: /usr/share/tomcat/webapps/ansible/index.html
 
 - name: index.html on app 1
   hosts: app2
-  gather_facts: true
-  become: true
   template:
     src: index.html.app2
     dest: /usr/share/tomcat/webapps/ansible/index.html
