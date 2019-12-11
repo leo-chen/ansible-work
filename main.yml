@@ -3,7 +3,7 @@
 - name: configuration
   hosts: all
   gather_facts: false
-  become: true
+  become: yes
 #  roles:
 #  - name: osp-facts
 # Setup front-end load balancer tier
