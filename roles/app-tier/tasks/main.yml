@@ -28,15 +28,3 @@
   file:
     path: /usr/share/tomcat/webapps/ansible
     state: directory
-
-- name: index.html on app 1
-  hosts: app1
-  template:
-    src: index.html.app1
-    dest: /usr/share/tomcat/webapps/ansible/index.html
-
-- name: index.html on app 1
-  hosts: app2
-  template:
-    src: index.html.app2
-    dest: /usr/share/tomcat/webapps/ansible/index.html
